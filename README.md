@@ -3,7 +3,7 @@ Tree
 
 ## Names and Contributions
 - George Matta
-  -  A
+  - A
 - Pierlorenzo Peruzzo
   - B
 - Angelica Arteaga
