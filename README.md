@@ -3,9 +3,9 @@ Tree
 
 ## Names and Contributions
 - George Matta
-  - A
+  - Implemented getting the height for a BinaryTree and a BinaryNode. Implemented getting the number of nodes for a BinaryTree and a BinaryNode
 - Pierlorenzo Peruzzo
-  - B
+  - Initialized the repo and implemented postorder traversal for BinaryTree and BinaryNode
 - Angelica Arteaga
   - C
 
