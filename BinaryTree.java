@@ -96,7 +96,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
 
         postorderTraverse(node.getLeftChild());
         postorderTraverse(node.getRightChild());
-        System.out.printf(node.getData().toString());
+        System.out.print(node.getData());
     }
 
     /**
@@ -159,7 +159,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
      * @return  The number of nodes in the "whole" tree
      */
     public int getNumberOfNodes(){
-        return 0;
+        return getNumberOfNodes(root);
     } // end getNumberOfNodes
 
     /**
@@ -168,7 +168,13 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
      * @return  The number of nodes in the subtree rooted at this node.
      */
     private int getNumberOfNodes(BinaryNode<T> node){
-        return 0;
+        int numberOfNodes = 0;
+        if(node != null){
+            numberOfNodes++; // We add one node for the current node
+            numberOfNodes += getNumberOfNodes(node.getLeftChild()); // We get the nodes at the left subtree
+            numberOfNodes += getNumberOfNodes(node.getRightChild()); // We get the nodes at the right subtree
+        }
+        return numberOfNodes; // We return the number of nodes
     } // end getNumberOfNodes
 
     /**

@@ -5,10 +5,12 @@ public class DriverBT{
 		BinaryTree<String> aTree = new BinaryTree<>();
 		createTree1(aTree);
 
-		System.out.println("(binaryTree) post-order: ");
+		System.out.print("(binaryTree) post-order: ");
 		aTree.postorderTraverse();
 
-		System.out.println("(binaryNode) post-order: ");
+        System.out.println();
+
+		System.out.print("(binaryNode) post-order: ");
 		aTree.postorderTraverse_callBinaryNodeMethod();
 
 		System.out.println();
@@ -28,10 +30,12 @@ public class DriverBT{
 		BinaryTree<String> aTree2 = new BinaryTree<>();
 		createTree2(aTree2);
 
-		System.out.println("(binaryTree) post-order: ");
+		System.out.print("(binaryTree) post-order: ");
 		aTree2.postorderTraverse();
 
-		System.out.println("(binaryNode) post-order: ");
+        System.out.println();
+
+		System.out.print("(binaryNode) post-order: ");
 		aTree2.postorderTraverse_callBinaryNodeMethod();
 
 		System.out.println();

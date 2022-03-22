@@ -133,7 +133,7 @@ class BinaryNode<T>{
         // To double check
         postorderTraverse_binaryNodeMethod(node.getLeftChild());
         postorderTraverse_binaryNodeMethod(node.getRightChild());
-        System.out.printf(node.getData().toString());
+        System.out.print(node.getData());
     }
 
 
