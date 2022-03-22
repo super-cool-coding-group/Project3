@@ -131,8 +131,12 @@ class BinaryNode<T>{
         }
 
         // To double check
-        postorderTraverse_binaryNodeMethod(node.getLeftChild());
-        postorderTraverse_binaryNodeMethod(node.getRightChild());
+        if(node.hasLeftChild())
+            postorderTraverse_binaryNodeMethod(node.getLeftChild());
+
+        if(node.hasRightChild())
+            postorderTraverse_binaryNodeMethod(node.getRightChild());
+
         System.out.print(node.getData());
     }
 
@@ -148,7 +152,19 @@ class BinaryNode<T>{
      * @return  The height of the subtree rooted at "this" node.
      */
     public int getHeight_binaryNodeMethod(){
-        return 0;
+        int height = 0;
+        int leftHeight = 0;
+        int rightHeight = 0;
+        if (this != null){
+            if(leftChild != null){
+                leftHeight = leftChild.getHeight_binaryNodeMethod();
+            }
+            if(rightChild != null){
+                rightHeight = rightChild.getHeight_binaryNodeMethod();
+            }
+            height = 1 + Math.max(leftHeight, rightHeight);
+        }
+        return height;
     } // end getHeight
 
 

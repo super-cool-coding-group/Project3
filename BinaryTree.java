@@ -104,7 +104,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
      * prints (using post-order traversal) all nodes in the "whole" tree
      */
     public void postorderTraverse_callBinaryNodeMethod(){
-        root.postorderTraverse_binaryNodeMethod();
+        if(root != null)
+            root.postorderTraverse_binaryNodeMethod();
     }
 
 
@@ -144,7 +145,10 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
      * @return  The height of the "whole" tree.
      */
     public int getHeight_callBinaryNodeMethod(){
-        return 0;
+        int height = 0;
+        if (root != null)
+            height = root.getHeight_binaryNodeMethod();
+        return height;
     } // end getHeight_callBinaryNodeMethod
 
 
@@ -156,7 +160,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
 
     /**
      * Calls getNumberOfNodes(BinaryNode<T> node)
-     * @return  The number of nodes in the "whole" tree
+     * @return The number of nodes in the "whole" tree
      */
     public int getNumberOfNodes(){
         return getNumberOfNodes(root);
@@ -165,7 +169,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
     /**
      * A Recursive Method in the BinaryTree Class
      * Counts the nodes in the subtree rooted at this node.
-     * @return  The number of nodes in the subtree rooted at this node.
+     * @return The number of nodes in the subtree rooted at this node.
      */
     private int getNumberOfNodes(BinaryNode<T> node){
         int numberOfNodes = 0;
@@ -180,7 +184,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
     /**
      * The following calls getNumberOfNodes_binaryNodeMethod() which is a recursive binaryNode class method
      * Counts the nodes in the "whole" tree
-     * @return  The number of nodes in the "whole" tree.
+     * @return The number of nodes in the "whole" tree.
      */
     public int getNumberOfNodes_callBinaryNodeMethod(){
         int numberOfNodes = 0;
