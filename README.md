@@ -1,5 +1,5 @@
 # Project3
-Tree
+Implementations and demonstrations of postorder traversal, height counting, and node counting for BinaryTree and BinaryNode objects.
 
 ## Names and Contributions
 - George Matta
