@@ -121,8 +121,25 @@ class BinaryNode<T>{
     }
 
     /**
-     * Method Description
-     * @param node Parameter Description
+     * A Recursive Method in the BinaryNode Class
+     * prints (using pre-order traversal) all nodes of the subtree rooted at "this" node
+     */
+    public void preorderTraverse_binaryNodeMethod(){
+        preorderTraverse_binaryNodeMethod(this);
+    }
+
+    /**
+     * A Recursive Method in the BinaryNode Class
+     * prints (using in-order traversal) all nodes of the subtree rooted at "this" node
+     */
+    public void inorderTraverse_binaryNodeMethod(){
+        inorderTraverse_binaryNodeMethod(this);
+    }
+
+    /**
+     * A Recursive Method in the BinaryNode Class
+     * prints (using post-order traversal) all nodes of the subtree rooted at "this" node
+     * @param node The node we are printing the traversal for
      */
     public void postorderTraverse_binaryNodeMethod(BinaryNode<T> node){
 
@@ -140,6 +157,47 @@ class BinaryNode<T>{
         System.out.print(node.getData());
     }
 
+    /**
+     * A Recursive Method in the BinaryNode Class
+     * prints (using pre-order traversal) all nodes of the subtree rooted at "this" node
+     * @param node The node we are printing the traversal for
+     */
+    public void preorderTraverse_binaryNodeMethod(BinaryNode<T> node){
+
+        if (node == null){
+            return;
+        }
+
+        // // To double check
+        // if(node.hasLeftChild())
+        //     postorderTraverse_binaryNodeMethod(node.getLeftChild());
+
+        // if(node.hasRightChild())
+        //     postorderTraverse_binaryNodeMethod(node.getRightChild());
+
+        // System.out.print(node.getData());
+    }
+
+    /**
+     * A Recursive Method in the BinaryNode Class
+     * prints (using in-order traversal) all nodes of the subtree rooted at "this" node
+     * @param node The node we are printing the traversal for
+     */
+    public void inorderTraverse_binaryNodeMethod(BinaryNode<T> node){
+
+        if (node == null){
+            return;
+        }
+
+        // // To double check
+        // if(node.hasLeftChild())
+        //     postorderTraverse_binaryNodeMethod(node.getLeftChild());
+
+        // if(node.hasRightChild())
+        //     postorderTraverse_binaryNodeMethod(node.getRightChild());
+
+        // System.out.print(node.getData());
+    }
 
     /** -------------------------------------------------------------------- */
     /**

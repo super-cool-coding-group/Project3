@@ -86,6 +86,22 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
     }
 
     /**
+     * Calls preorderTraverse(BinaryNode<T> node)
+     * prints (using pre-order traversal) all nodes in the "whole" tree
+     */
+    public void preorderTraverse(){
+        preorderTraverse(root);
+    }
+
+    /**
+     * Calls inorderTraverse(BinaryNode<T> node)
+     * prints (using in-order traversal) all nodes in the "whole" tree
+     */
+    public void inorderTraverse(){
+        inorderTraverse(root);
+    }
+
+    /**
      * A Recursive Method in the BinaryTree Class
      * prints (using post-order traversal) all nodes in the subtree rooted at this node.
      */
@@ -100,12 +116,58 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
     }
 
     /**
+     * A Recursive Method in the BinaryTree Class
+     * prints (using pre-order traversal) all nodes in the subtree rooted at this node.
+     */
+    private void preorderTraverse(BinaryNode<T> node){
+        if (node == null) {
+            return;
+        }
+
+        // postorderTraverse(node.getLeftChild());
+        // postorderTraverse(node.getRightChild());
+        // System.out.print(node.getData());
+    }
+
+    /**
+     * A Recursive Method in the BinaryTree Class
+     * prints (using in-order traversal) all nodes in the subtree rooted at this node.
+     */
+    private void inorderTraverse(BinaryNode<T> node){
+        if (node == null) {
+            return;
+        }
+
+        // postorderTraverse(node.getLeftChild());
+        // postorderTraverse(node.getRightChild());
+        // System.out.print(node.getData());
+    }
+
+    /**
      * The following calls postorderTraverse_binaryNodeMethod(), which is a recursive binaryNode class method
      * prints (using post-order traversal) all nodes in the "whole" tree
      */
     public void postorderTraverse_callBinaryNodeMethod(){
         if(root != null)
             root.postorderTraverse_binaryNodeMethod();
+    }
+
+    /**
+     * The following calls preorderTraverse_binaryNodeMethod(), which is a recursive binaryNode class method
+     * prints (using pre-order traversal) all nodes in the "whole" tree
+     */
+    public void preorderTraverse_callBinaryNodeMethod(){
+        if(root != null)
+            root.preorderTraverse_binaryNodeMethod();
+    }
+
+    /**
+     * The following calls inorderTraverse_binaryNodeMethod(), which is a recursive binaryNode class method
+     * prints (using in-order traversal) all nodes in the "whole" tree
+     */
+    public void inorderTraverse_callBinaryNodeMethod(){
+        if(root != null)
+            root.inorderTraverse_binaryNodeMethod();
     }
 
 
