@@ -1,3 +1,5 @@
+package src;
+
 class BinaryNode<T>{
 
     private T             data;

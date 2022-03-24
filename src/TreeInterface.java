@@ -1,3 +1,5 @@
+package src;
+
 public interface TreeInterface<T>{
 
    public T getRootData();

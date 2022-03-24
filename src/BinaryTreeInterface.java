@@ -1,3 +1,5 @@
+package src;
+
 public interface BinaryTreeInterface<T> extends TreeInterface<T>{
 
     /** Sets the data in the root of this binary tree.
