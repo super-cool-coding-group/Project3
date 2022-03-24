@@ -21,10 +21,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
      * @param preorder A String of the preorder traversal of the binary tree to be constructed
      * @param inorder A String of the inorder traversal of the binary tree to be constructed
      */
-    @SuppressWarnings("unchecked")
     public BinaryTree(String preorder, String inorder){
-        BinaryTree<String> createdTree = createTreeFromTraversals(preorder, inorder);
-        root = ( (BinaryTree<T>) createdTree).getRootNode();
+        createTreeFromTraversals(preorder, inorder);
     }
 
     /**
@@ -33,7 +31,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
      * @param inorder A String of the inorder traversal of the binary tree to be constructed
      * @return The BinaryTree of Strings that we constructed from the traversal strings
      */
-    private static BinaryTree<String> createTreeFromTraversals(String preorder, String inorder){
+    @SuppressWarnings("unchecked")
+    private BinaryNode<T> createTreeFromTraversals(String preorder, String inorder){
         // Basecase
         // Check that we have inorder and preorder strings. if we don't, then we are at a leaf, so we return null
         if(inorder.length() == 0 || preorder.length() == 0){
@@ -59,11 +58,13 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
 
         // Create the left and right trees given the left and right partitions of our preorder and inorder strings
         // As stated in the basecase, if we end up not having one of the preorder or inorder strings, we would get null
-        BinaryTree<String> leftTree = createTreeFromTraversals(preorderLeft, inorderLeft);
-        BinaryTree<String> rightTree = createTreeFromTraversals(preorderRight, inorderRight);
+        BinaryNode<T> leftTree = createTreeFromTraversals(preorderLeft, inorderLeft);
+        BinaryNode<T> rightTree = createTreeFromTraversals(preorderRight, inorderRight);
 
         // Return the final binary tree, which ties together the root data to the left and right subtrees
-        return new BinaryTree<String>(rootData, leftTree, rightTree);
+        root = new BinaryNode<T>((T) rootData, leftTree, rightTree);
+
+        return root;
     }
 
     /**
