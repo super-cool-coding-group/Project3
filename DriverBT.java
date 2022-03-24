@@ -1,6 +1,7 @@
 public class DriverBT{
 
 	public static void main(String[] args){
+
 		System.out.println("1st Testing Example:");
 		BinaryTree<String> aTree = new BinaryTree<>();
 		createTree1(aTree);
@@ -49,6 +50,9 @@ public class DriverBT{
 		System.out.println("(BinaryNode) # nodes of tree is " + aTree2.getNumberOfNodes_callBinaryNodeMethod());
 
 		System.out.println("Done.");
+
+        BinaryTree<String> bt = new BinaryTree<>("ABDHIECFGJK", "HDIBEAFCJGK");
+        bt.postorderTraverse();
 	}  // end main
 
 	public static void createTree1(BinaryTree<String> tree){

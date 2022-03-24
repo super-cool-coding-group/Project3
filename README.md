@@ -11,6 +11,8 @@ Implementations and demonstrations of postorder traversal, height counting, and 
 
 ## Extra Features
 - Super cool code courtesy of the Super Cool Coding Group
+- Methods for Preorder traversal and Inorder traversal
+- BinaryTree constructor to create a tree given preorder and inorder traversal strings :)
 
 ## Video Link
 -
