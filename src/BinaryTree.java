@@ -145,8 +145,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
     } // end initializeTree
 
 
-    /** -------------------------------------------------------------------- */
-    /** Task 1: Implement the 4 methods
+    /* -------------------------------------------------------------------- */
+    /* Task 1: Implement the 4 methods
      *     . In BinaryTree.java
      *          1. public void postorderTraverse();
      *          2. private void postorderTraverse(BinaryNode<T> node)
@@ -249,8 +249,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
     }
 
 
-    /** -------------------------------------------------------------------- */
-    /**
+    /* -------------------------------------------------------------------- */
+    /*
      * Task 2: Implement the 2 methods
      *     . In BinaryTree.java
      *          1. public int getHeight_callBinaryNodeMethod()
@@ -292,8 +292,8 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
     } // end getHeight_callBinaryNodeMethod
 
 
-    /** -------------------------------------------------------------------- */
-    /** Task 3: Implement the 2 methods
+    /* -------------------------------------------------------------------- */
+    /* Task 3: Implement the 2 methods
         *     . In BinaryTree.java
         *          1. public int getNumberOfNodes()
         *          2. private int getNumberOfNodes(BinaryNode<T> node)*/
