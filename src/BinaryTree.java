@@ -203,9 +203,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
             return;
         }
 
-        // postorderTraverse(node.getLeftChild());
-        // postorderTraverse(node.getRightChild());
-        // System.out.print(node.getData());
+        System.out.print(node.getData());
+        preorderTraverse(node.getLeftChild());
+        preorderTraverse(node.getRightChild());
     }
 
     /**
@@ -217,9 +217,9 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>{
             return;
         }
 
-        // postorderTraverse(node.getLeftChild());
-        // postorderTraverse(node.getRightChild());
-        // System.out.print(node.getData());
+        inorderTraverse(node.getLeftChild());
+        System.out.print(node.getData());
+        inorderTraverse(node.getRightChild());
     }
 
     /**

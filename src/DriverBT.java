@@ -51,10 +51,18 @@ public class DriverBT{
 		System.out.println("(BinaryTree) # nodes of tree is " + aTree2.getNumberOfNodes());
 		System.out.println("(BinaryNode) # nodes of tree is " + aTree2.getNumberOfNodes_callBinaryNodeMethod());
 
-		System.out.println("Done.");
+		System.out.println();
 
+		System.out.println("Testing extra features: ");
         BinaryTree<String> bt = new BinaryTree<>("ABDHIECFGJK", "HDIBEAFCJGK");
         bt.postorderTraverse();
+		System.out.println();
+		bt.inorderTraverse();
+		System.out.println();
+		bt.preorderTraverse();
+		System.out.println();
+
+		System.out.println("Done.");
 	}  // end main
 
 	public static void createTree1(BinaryTree<String> tree){
