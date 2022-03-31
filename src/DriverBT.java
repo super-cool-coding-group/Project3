@@ -53,14 +53,39 @@ public class DriverBT{
 
 		System.out.println();
 
-		System.out.println("Testing extra features: ");
+		System.out.println("==========================================");
+
+		System.out.println("\nTESTING EXTRA FEATURES: \n");
         BinaryTree<String> bt = new BinaryTree<>("ABDHIECFGJK", "HDIBEAFCJGK");
-        bt.postorderTraverse();
+
+		// Postorder traverse
+		System.out.println("Testing Postorder Traverse:");
+		System.out.print("\t(BinaryTree) ");
+		bt.postorderTraverse();
 		System.out.println();
+		System.out.print("\t(BinaryNode) ");
+		bt.getRootNode().postorderTraverse_binaryNodeMethod();
+		System.out.println("\n");
+
+		// Inorder Traverse
+		System.out.println("Testing Inorder Traverse:");
+		System.out.print("\t(BinaryTree) ");
 		bt.inorderTraverse();
 		System.out.println();
+		System.out.print("\t(BinaryNode) ");
+		bt.getRootNode().inorderTraverse_binaryNodeMethod();
+		System.out.println("\n");
+
+		// Preorder Traverse
+		System.out.println("Testing Preorder Traverse:");
+		System.out.print("\t(BinaryTree) ");
 		bt.preorderTraverse();
 		System.out.println();
+		System.out.print("\t(BinaryNode) ");
+		bt.getRootNode().preorderTraverse_binaryNodeMethod();
+		System.out.println("\n");
+
+		System.out.println("==========================================");
 
 		System.out.println("Done.");
 	}  // end main

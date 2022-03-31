@@ -170,14 +170,14 @@ class BinaryNode<T>{
             return;
         }
 
-        // // To double check
-        // if(node.hasLeftChild())
-        //     postorderTraverse_binaryNodeMethod(node.getLeftChild());
+        System.out.print(node.getData());
 
-        // if(node.hasRightChild())
-        //     postorderTraverse_binaryNodeMethod(node.getRightChild());
+        // To double check
+        if(node.hasLeftChild())
+            preorderTraverse_binaryNodeMethod(node.getLeftChild());
 
-        // System.out.print(node.getData());
+        if(node.hasRightChild())
+            preorderTraverse_binaryNodeMethod(node.getRightChild());
     }
 
     /**
@@ -191,14 +191,14 @@ class BinaryNode<T>{
             return;
         }
 
-        // // To double check
-        // if(node.hasLeftChild())
-        //     postorderTraverse_binaryNodeMethod(node.getLeftChild());
+        // To double check
+        if(node.hasLeftChild())
+            inorderTraverse_binaryNodeMethod(node.getLeftChild());
 
-        // if(node.hasRightChild())
-        //     postorderTraverse_binaryNodeMethod(node.getRightChild());
+        System.out.print(node.getData());
 
-        // System.out.print(node.getData());
+        if(node.hasRightChild())
+            inorderTraverse_binaryNodeMethod(node.getRightChild());
     }
 
     /* -------------------------------------------------------------------- */
