@@ -77,18 +77,24 @@ public class BinaryMethodTests {
     }
 
     // Test height calculation in BinaryTree
+        // test when height should be 0, 1, and any other number
+
     @Test
     public void testHeight(){
 
     }
 
     // Test height calculation in BinaryNode
+        // test when height should be 0, 1, and any other number.
+        // also check a node that is within a tree but is not necessarily
     @Test
     public void testHeight_callBinaryNodeMethod(){
 
     }
 
     // Test node calculation in BinaryTree
+        // same tests as height
+
     @Test
     public void testNode(){
 
