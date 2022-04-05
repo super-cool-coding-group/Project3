@@ -25,9 +25,13 @@ public class BinaryMethodTests {
     // Test Inorder traversal in BinaryNode
 
     // Test height calculation in BinaryTree
+        // test when height should be 0, 1, and any other number
     // Test height calculation in BinaryNode
+        // test when height should be 0, 1, and any other number.
+        // also check a node that is within a tree but is not necessarily the root of the tree
 
     // Test node calculation in BinaryTree
+        // same tests as height
     // Test node calculation in BinaryNode
 
     // Test BinaryTree(preorder, inorder) constructor
