@@ -55,7 +55,7 @@ public class DriverBT{
 
 		System.out.println("==========================================");
 
-		System.out.println("\nTESTING EXTRA FEATURES: \n");
+		System.out.println("\nTESTING EXTRA FEATURES (the tree construced is made using the special (preorder, inorder) constructor): \n");
         BinaryTree<String> bt = new BinaryTree<>("ABDHIECFGJK", "HDIBEAFCJGK");
 
 		// Postorder traverse
@@ -84,6 +84,13 @@ public class DriverBT{
 		System.out.print("\t(BinaryNode) ");
 		bt.getRootNode().preorderTraverse_binaryNodeMethod();
 		System.out.println("\n");
+
+        System.out.println("\nThe following tree was constructed using the special (preorder, inorder) constructor.\n");
+        System.out.println("It is the same tree as the one created in createTree2.\nWe print out the postorder traversal of this tree.\n");
+        BinaryTree<String> bt2 = new BinaryTree<>("ABCDFEGH", "BAFDCGEH");
+        bt2.postorderTraverse();
+
+        System.out.println("\n");
 
 		System.out.println("==========================================");
 
