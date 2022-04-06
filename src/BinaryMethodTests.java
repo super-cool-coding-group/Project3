@@ -127,27 +127,29 @@ public class BinaryMethodTests {
         // also check a node that is within a tree but is not necessarily the root of the tree
     @Test
     public void testHeight_callBinaryNodeMethod(){
-        BinaryTree<String> tree = new BinaryTree<>();
+        /**BinaryNode<String> tree = new BinaryNode<>();
         int expected = 0;
-        int test = tree.getHeight_callBinaryNodeMethod();
-        assertEquals(expected, test);
+        int test = tree.getHeight_binaryNodeMethod();
+        assertEquals(expected, test);*/
 
         // test height = 1
-        BinaryTree<String> tree2 = new BinaryTree<>("A");
+        BinaryNode<String> tree2 = new BinaryNode<>("A");
         int expected2 = 1;
-        int test2 = tree2.getHeight_callBinaryNodeMethod();
+        int test2 = tree2.getHeight_binaryNodeMethod();
         assertEquals(expected2, test2);
 
         // test height = 4
-        BinaryTree<String> tree3 = new BinaryTree<>();
-        tree3.setTree("A", bTree, cTree);
+        BinaryNode<String> tree3 = new BinaryNode<>("A", bTreeNode, cTreeNode);
         int expected3 = 4;
-        int test3 = tree3.getHeight_callBinaryNodeMethod();
+        int test3 = tree3.getHeight_binaryNodeMethod();
         assertEquals(expected3, test3);
         //System.out.print(test3);
 
-        // test node
-
+        //test node
+        BinaryNode<String> tree4 = new BinaryNode<>("A", bTreeNode, cTreeNode);
+        int expected4 = 1;
+        int test4 = fTreeNode.getHeight_binaryNodeMethod();
+        assertEquals(expected4, test4);
     }
 
     // Test node calculation in BinaryTree
@@ -164,8 +166,8 @@ public class BinaryMethodTests {
     // Test node calculation in BinaryNode
     @Test
     public void testGetNumberOfNodes_callBinaryNodeMethod(){
-        tree.setTree("A", bTree, cTree);
-        int test = tree.getNumberOfNodes_callBinaryNodeMethod();
+        BinaryNode<String> tree = new BinaryNode<>("A", bTreeNode, cTreeNode);
+        int test = tree.getNumberOfNodes_binaryNodeMethod();
         int expected = 8;
         assertEquals(expected, test);
     }
