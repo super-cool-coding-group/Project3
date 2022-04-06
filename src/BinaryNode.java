@@ -250,8 +250,8 @@ class BinaryNode<T> {
             return "";
         }
 
-        return postorderTraverse_binaryNodeMethod_test(node.getRightChild()) +
-                postorderTraverse_binaryNodeMethod_test(node.getLeftChild()) +
+        return postorderTraverse_binaryNodeMethod_test(node.getLeftChild()) +
+                postorderTraverse_binaryNodeMethod_test(node.getRightChild()) +
                 node.getData().toString();
     }
 
