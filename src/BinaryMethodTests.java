@@ -19,7 +19,7 @@ import org.junit.Test;
 public class BinaryMethodTests {
 
     BinaryTree<String> tree = new BinaryTree<String>();
-    
+
     // BinaryTree objects
     // Leaves:
 	BinaryTree<String> bTree = new BinaryTree<>("B");
@@ -72,7 +72,7 @@ public class BinaryMethodTests {
     }
 
     // Test Preorder traversal in BinaryNode
-    @Test    
+    @Test
     public void testPreorderTraverse_callBinaryNodeMethod(){
         BinaryNode<String> tree = new BinaryNode<String>("A", bTreeNode, cTreeNode);
         String expected = "ABCDFEGH";
@@ -90,7 +90,7 @@ public class BinaryMethodTests {
     }
 
     // Test Inorder traversal in BinaryNode
-    @Test   
+    @Test
     public void testInorderTraverse_callBinaryNodeMethod(){
         BinaryNode<String> tree = new BinaryNode<String>("A", bTreeNode, cTreeNode);
         String expected = "BAFDCGEH";
@@ -146,7 +146,6 @@ public class BinaryMethodTests {
         //System.out.print(test3);
 
         //test node
-        BinaryNode<String> tree4 = new BinaryNode<>("A", bTreeNode, cTreeNode);
         int expected4 = 1;
         int test4 = fTreeNode.getHeight_binaryNodeMethod();
         assertEquals(expected4, test4);
