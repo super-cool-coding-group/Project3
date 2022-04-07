@@ -16,7 +16,7 @@ Implementations and demonstrations of postorder traversal, height counting, and 
 - Full JavaDocs
 
 ## Video Link
--
+- https://www.youtube.com/watch?v=Hc6cWcB4lGA
 
 ## JavaDoc Index Link
 - https://github.com/super-cool-coding-group/Project3/blob/main/javadocs/index.html
