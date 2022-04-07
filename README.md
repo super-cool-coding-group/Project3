@@ -7,7 +7,7 @@ Implementations and demonstrations of postorder traversal, height counting, and 
 - Pierlorenzo Peruzzo
   - Initialized the repo and implemented postorder traversal for BinaryTree and BinaryNode. Also implemented methods to find the preorder and inorder traversal of a BinaryTree and BinaryNode (in addition to postorder)
 - Angelica Arteaga
-  - C
+  - Defined the createTree2 method (for task 4) and created unit tests for all the methods we created.
 
 ## Extra Features
 - Super cool code courtesy of the Super Cool Coding Group

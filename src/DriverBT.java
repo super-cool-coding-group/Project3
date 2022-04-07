@@ -1,5 +1,22 @@
 package src;
 
+/**
+ * This is the DriverBT which is a Driver for the BinaryTree and BinaryNode classes.
+ *
+ * This class has three methods: a main method, a createTree1 method, and a createTree2 method.
+ *
+ * The main method just runs through the entire program: it creates a tree, traverses it using post, pre, and in-order,
+ * finds its height, finds the number of nodes it has, creates a second tree and runs through the whole process again, and creates
+ * a tree using the special BinaryTree(inorder, preorder) constructor.
+ *
+ * This class is simply to showcase the functionality of the BinaryTree and BinaryNode classes.
+ *
+ * @author Angelica Arteaga
+ * @author Pierlorenzo Peruzzo
+ * @author George Matta
+ *
+ * @version 3.0
+ */
 public class DriverBT{
 
 	public static void main(String[] args){
