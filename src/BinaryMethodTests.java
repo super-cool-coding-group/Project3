@@ -13,6 +13,8 @@ import org.junit.Test;
  *
  * We use the JUnit testing framework to run these tests.
  *
+ * The methods in this class are not documented, but they each test the exactly what the method's name says they test.
+ *
  * @author Angelica Arteaga
  * @author George Matta
  */
@@ -101,7 +103,7 @@ public class BinaryMethodTests {
     // Test height calculation in BinaryTree
         // test when height should be 0, 1, and any other number
     @Test
-    public void testHeight(){
+    public void testGetHeight(){
         // test height = 0
 		BinaryTree<String> tree = new BinaryTree<>();
         int expected = 0;
