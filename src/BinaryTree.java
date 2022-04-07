@@ -270,14 +270,14 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
      * Task 1: Implement the 4 methods
      * . In BinaryTree.java
      * 1. public void postorderTraverse();
-     * 2. private void postorderTraverse(BinaryNode<T> node)
+     * 2. private void postorderTraverse(BinaryNode node)
      * 3. public void postorderTraverse_callBinaryNodeMethod()
      * . In BinaryNode.java
      * 4. public void postorderTraverse_binaryNodeMethod()
      */
 
     /**
-     * Calls postorderTraverse(BinaryNode<T> node)
+     * Calls postorderTraverse(BinaryNode node)
      * prints (using post-order traversal) all nodes in the "whole" tree
      */
     public void postorderTraverse() {
@@ -285,7 +285,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
     }
 
     /**
-     * Calls preorderTraverse(BinaryNode<T> node)
+     * Calls preorderTraverse(BinaryNode node)
      * prints (using pre-order traversal) all nodes in the "whole" tree
      */
     public void preorderTraverse() {
@@ -293,7 +293,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
     }
 
     /**
-     * Calls inorderTraverse(BinaryNode<T> node)
+     * Calls inorderTraverse(BinaryNode node)
      * prints (using in-order traversal) all nodes in the "whole" tree
      */
     public void inorderTraverse() {
@@ -354,7 +354,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
     // #region Test Traverse
 
     /**
-     * Calls postorderTraverse(BinaryNode<T> node)
+     * Calls postorderTraverse(BinaryNode node)
      * prints (using post-order traversal) all nodes in the "whole" tree
      * This method is for testing purpose only.
      *
@@ -365,7 +365,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
     }
 
     /**
-     * Calls preorderTraverse(BinaryNode<T> node)
+     * Calls preorderTraverse(BinaryNode node)
      * prints (using pre-order traversal) all nodes in the "whole" tree
      * This method is for testing purpose only.
      *
@@ -376,7 +376,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
     }
 
     /**
-     * Calls inorderTraverse(BinaryNode<T> node)
+     * Calls inorderTraverse(BinaryNode node)
      * prints (using in-order traversal) all nodes in the "whole" tree
      * This method is for testing purpose only.
      *
@@ -485,7 +485,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
      */
 
     /**
-     * Calls getHeight(BinaryNode<T> node) and passes root in for the node argument
+     * Calls getHeight(BinaryNode node) and passes root in for the node argument
      *
      * @return The height of the "whole" tree
      */
@@ -527,11 +527,11 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
      * Task 3: Implement the 2 methods
      * . In BinaryTree.java
      * 1. public int getNumberOfNodes()
-     * 2. private int getNumberOfNodes(BinaryNode<T> node)
+     * 2. private int getNumberOfNodes(BinaryNode node)
      */
 
     /**
-     * Calls getNumberOfNodes(BinaryNode<T> node) and passes root in as the node argument
+     * Calls getNumberOfNodes(BinaryNode node) and passes root in as the node argument
      *
      * @return The number of nodes in the "whole" tree
      */

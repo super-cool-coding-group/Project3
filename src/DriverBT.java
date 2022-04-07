@@ -5,10 +5,6 @@ package src;
  *
  * This class has three methods: a main method, a createTree1 method, and a createTree2 method.
  *
- * The main method just runs through the entire program: it creates a tree, traverses it using post, pre, and in-order,
- * finds its height, finds the number of nodes it has, creates a second tree and runs through the whole process again, and creates
- * a tree using the special BinaryTree(inorder, preorder) constructor.
- *
  * This class is simply to showcase the functionality of the BinaryTree and BinaryNode classes.
  *
  * @author Angelica Arteaga
@@ -19,6 +15,12 @@ package src;
  */
 public class DriverBT{
 
+    /**
+     * The main method that just runs through the entire program: it creates a tree, traverses it using post, pre, and in-order,
+     * finds its height, finds the number of nodes it has, creates a second tree and runs through the whole process again, and creates
+     * a tree using the special BinaryTree(inorder, preorder) constructor.
+     * @param args The basic String[] args for any main method in Java
+     */
 	public static void main(String[] args){
 
 		System.out.println("1st Testing Example:");
@@ -114,6 +116,10 @@ public class DriverBT{
 		System.out.println("Done.");
 	}  // end main
 
+    /**
+     * A static method to just run through the creation of a tree given an empty BinaryTree object
+     * @param tree The empty BinaryTree object we are using to create this static tree.
+     */
 	public static void createTree1(BinaryTree<String> tree){
 		// Leaves
 		BinaryTree<String> dTree = new BinaryTree<>("D");
@@ -142,6 +148,14 @@ public class DriverBT{
 	/**-------------------------------------------------------------------- */
 	/**
      * Task 4: Create a tree case as shown in assignment 3
+     */
+    /**
+     * A static method to just run through the creation of a tree given an empty BinaryTree object.
+     *
+     * This method is similar to the createTree1 method. This method just creates a different tree.
+     *
+     *
+     * @param tree The empty BinaryTree object we are using to create this static tree.
      */
 	public static void createTree2(BinaryTree<String> tree){
 		// Leaves:
