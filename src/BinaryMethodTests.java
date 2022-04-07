@@ -173,11 +173,16 @@ public class BinaryMethodTests {
 
     // Test BinaryTree(preorder, inorder) constructor
     @Test
-    public void testBinaryTree(){
+    public void testSpecialConstructor(){
         BinaryTree<String> tree = new BinaryTree<String>("ABCDFEGH", "BAFDCGEH");
         String test = tree.postorderTraverse_test();
         String expected = "BFDGHECA";
         assertEquals(expected, test);
+
+        BinaryTree<String> tree2 = new BinaryTree<String>("ABDHIECFGJK", "HDIBEAFCJGK");
+        String test2 = tree2.postorderTraverse_test();
+        String expected2 = "HIDEBFJKGCA";
+        assertEquals(expected2, test2);
     }
 
 }
