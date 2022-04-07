@@ -126,14 +126,14 @@ public class BinaryMethodTests {
         // test when height should be 0, 1, and any other number.
         // also check a node that is within a tree but is not necessarily the root of the tree
     @Test
-    public void testHeight_callBinaryNodeMethod(){
-        /**BinaryNode<String> tree = new BinaryNode<>();
+    public void testGetHeight_BinaryNodeMethod(){
+        BinaryTree<String> tree = new BinaryTree<>();
         int expected = 0;
-        int test = tree.getHeight_binaryNodeMethod();
-        assertEquals(expected, test);*/
+        int test = tree.getHeight_callBinaryNodeMethod();
+        assertEquals(expected, test);
 
         // test height = 1
-        BinaryNode<String> tree2 = new BinaryNode<>("A");
+        BinaryNode<String> tree2 = new BinaryNode<>();
         int expected2 = 1;
         int test2 = tree2.getHeight_binaryNodeMethod();
         assertEquals(expected2, test2);
